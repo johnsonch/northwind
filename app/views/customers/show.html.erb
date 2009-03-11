@@ -1,0 +1,37 @@
+<!-- t.string "CompanyName",  :limit => 80,  :null => false
+t.string "ContactName",  :limit => 60
+t.string "ContactTitle", :limit => 60
+t.string "Address",      :limit => 120
+t.string "City",         :limit => 30
+t.string "Region",       :limit => 30
+t.string "PostalCode",   :limit => 20
+t.string "Country",      :limit => 30
+t.string "Phone",        :limit => 48
+t.string "Fax",          :limit => 48 -->
+
+
+<h1><%= @customer.CompanyName %></h1>
+<p>
+	Contact Name: <%=h @customer.ContactName %><br/>
+	Contact Title: <%=h @customer.ContactTitle %><br/>
+	Address: <%=h @customer.Address %><br/>
+	Phone: <%=h @customer.Phone %><br/>
+	Fax: <%=h @customer.Fax %><br/>
+</p>	
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>
+
+
+<h1>Past Orders</h1>
+<table>
+	<tr>
+		<td>Order Date</td>
+		<td>Employee Name</td>
+	</tr>
+<% for order in @customer.orders %>
+	<tr>
+		<td><%= order.OrderDate.strftime('%m/%d/%Y') %></td>
+		<td><%= link_to "#{order.employee.FirstName} #{order.employee.LastName}", employee_path(order.employee) %></td>
+	</tr>
+<% end %>
+</table>

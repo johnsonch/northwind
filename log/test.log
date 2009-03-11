@@ -1,0 +1,520 @@
+  [4;36;1mCustomer Columns (58.7ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+WARNING: Can't mass-assign these protected attributes: CustomerID
+  [4;35;1mSQL (42.2ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (0.0ms)[0m   [0;1mDBI::DatabaseError: 23000 (515) [FreeTDS][SQL Server]Cannot insert the value NULL into column 'CustomerID', table 'Northwind_test.dbo.Customers'; column does not allow nulls. INSERT fails.: INSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mCustomer Columns (42.4ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;35;1mSQL (43.0ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (0.0ms)[0m   [0;1mDBI::DatabaseError: 23000 (515) [FreeTDS][SQL Server]Cannot insert the value NULL into column 'CustomerID', table 'Northwind_test.dbo.Customers'; column does not allow nulls. INSERT fails.: INSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mCustomer Columns (42.8ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+WARNING: Can't mass-assign these protected attributes: CustomerID
+  [4;35;1mSQL (42.6ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (0.0ms)[0m   [0;1mDBI::DatabaseError: 23000 (515) [FreeTDS][SQL Server]Cannot insert the value NULL into column 'CustomerID', table 'Northwind_test.dbo.Customers'; column does not allow nulls. INSERT fails.: INSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mCustomer Columns (45.1ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;35;1mSQL (46.4ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (4.0ms)[0m   [0;1mINSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [CustomerID], [Phone], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, 'INAC', '608.661.7731', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;35;1mSQL (4.4ms)[0m   [0mSELECT @@IDENTITY AS Ident[0m
+  [4;36;1mCustomer Columns (45.3ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (42.7ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (0.0ms)[0m   [0;1mDBI::DatabaseError: 23000 (515) [FreeTDS][SQL Server]Cannot insert the value NULL into column 'CustomerID', table 'Northwind_test.dbo.Customers'; column does not allow nulls. INSERT fails.: INSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mCustomer Columns (46.2ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+WARNING: Can't mass-assign these protected attributes: CustomerID
+  [4;35;1mSQL (43.7ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (0.0ms)[0m   [0;1mDBI::DatabaseError: 23000 (515) [FreeTDS][SQL Server]Cannot insert the value NULL into column 'CustomerID', table 'Northwind_test.dbo.Customers'; column does not allow nulls. INSERT fails.: INSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mCustomer Columns (47.3ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;35;1mSQL (43.3ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (3.7ms)[0m   [0;1mINSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INAC', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mCustomer Columns (43.1ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;35;1mSQL (42.6ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (1.2ms)[0m   [0;1mINSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INAC', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;35;1mSQL (37.5ms)[0m   [0mSELECT TOP 1 * FROM [Customers] WHERE ([Customers].[CompanyName] = 'Inacom') [0m
+  [4;36;1mCustomer Columns (44.2ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;35;1mSQL (50.1ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (1.7ms)[0m   [0;1mINSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INAC', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mCustomer Columns (42.8ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;35;1mSQL (43.4ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (1.3ms)[0m   [0;1mINSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INAC', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;35;1mSQL (30.1ms)[0m   [0mSELECT TOP 1 * FROM [Customers] WHERE ([Customers].[CompanyName] = 'Inacom') [0m
+  [4;36;1mCustomer Columns (42.8ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;35;1mSQL (43.3ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (1.4ms)[0m   [0;1mINSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INACO', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;35;1mSQL (30.5ms)[0m   [0mSELECT TOP 1 * FROM [Customers] WHERE ([Customers].[CompanyName] = 'Inacom') [0m
+  [4;36;1mCustomer Columns (43.1ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;35;1mSQL (42.7ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (0.0ms)[0m   [0;1mDBI::DatabaseError: 22001 (8152) [FreeTDS][SQL Server]String or binary data would be truncated.: INSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INACOM', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mCustomer Columns (44.3ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;35;1mSQL (42.8ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (0.0ms)[0m   [0;1mDBI::DatabaseError: 22001 (8152) [FreeTDS][SQL Server]String or binary data would be truncated.: INSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INACOM', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mCustomer Columns (48.1ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;35;1mSQL (51.4ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (3.2ms)[0m   [0;1mINSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INACO', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;35;1mSQL (31.3ms)[0m   [0mSELECT TOP 1 * FROM [Customers] WHERE ([Customers].[CompanyName] = 'Inacom') [0m
+  [4;36;1mCustomer Columns (43.6ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;35;1mSQL (42.6ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mCustomer Create (1.3ms)[0m   [0;1mINSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INACO', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;35;1mSQL (30.4ms)[0m   [0mSELECT TOP 1 * FROM [Customers] WHERE ([Customers].[CompanyName] = 'Inacom') [0m
+  [4;36;1mSQL (30.3ms)[0m   [0;1mSELECT TOP 1 * FROM [Customers] WHERE ([Customers].[CompanyName] = 'Inacom') [0m
+  [4;36;1mCustomer Columns (47.0ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;35;1mSQL (47.1ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mSELECT TOP 1 [Customers].CustomerID FROM [Customers] WHERE ([Customers].[CustomerID] IS NULL) [0m
+  [4;35;1mCustomer Create (1.7ms)[0m   [0mINSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INACO', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mSQL (30.9ms)[0m   [0;1mSELECT TOP 1 * FROM [Customers] WHERE ([Customers].[CompanyName] = 'Inacom') [0m
+  [4;35;1mSQL (33.9ms)[0m   [0mSELECT TOP 1 * FROM [Customers] WHERE ([Customers].[CompanyName] = 'Inacom') [0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mSELECT TOP 1 [Customers].CustomerID FROM [Customers] WHERE ([Customers].[CustomerID] IS NULL) [0m
+  [4;35;1mCustomer Create (4.8ms)[0m   [0mINSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INACO', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mSQL (31.6ms)[0m   [0;1mSELECT TOP 1 * FROM [Customers] WHERE ([Customers].[CompanyName] = 'Inacom') [0m
+  [4;35;1mSQL (6.2ms)[0m   [0mSELECT TOP 1 [Customers].CustomerID FROM [Customers] WHERE ([Customers].[CustomerID] IS NULL) [0m
+  [4;36;1mCustomer Create (0.0ms)[0m   [0;1mDBI::DatabaseError: 23000 (2627) [FreeTDS][SQL Server]Violation of PRIMARY KEY constraint 'PK_Customers'. Cannot insert duplicate key in object 'dbo.Customers'.: INSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INACO', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mCustomer Columns (46.0ms)[0m   [0;1m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;35;1mSQL (45.9ms)[0m   [0m
+ SELECT 
+ cols.COLUMN_NAME as ColName, 
+ cols.COLUMN_DEFAULT as DefaultValue,
+ cols.NUMERIC_SCALE as numeric_scale,
+ cols.NUMERIC_PRECISION as numeric_precision, 
+ cols.DATA_TYPE as ColType, 
+ cols.IS_NULLABLE As IsNullable, 
+ COL_LENGTH(cols.TABLE_NAME, cols.COLUMN_NAME) as Length, 
+ COLUMNPROPERTY(OBJECT_ID(cols.TABLE_NAME), cols.COLUMN_NAME, 'IsIdentity') as IsIdentity, 
+ cols.NUMERIC_SCALE as Scale 
+ FROM INFORMATION_SCHEMA.COLUMNS cols 
+ WHERE cols.TABLE_NAME = 'Customers' 
+ [0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mSELECT TOP 1 [Customers].CustomerID FROM [Customers] WHERE ([Customers].[CustomerID] IS NULL) [0m
+  [4;35;1mCustomer Create (2.5ms)[0m   [0mINSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INACO', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mSQL (33.0ms)[0m   [0;1mSELECT TOP 1 * FROM [Customers] WHERE ([Customers].[CompanyName] = 'Inacom') [0m
+  [4;35;1mSQL (33.5ms)[0m   [0mSELECT TOP 1 * FROM [Customers] WHERE ([Customers].[CompanyName] = 'Inacom') [0m
+  [4;36;1mSQL (5.9ms)[0m   [0;1mSELECT TOP 1 [Customers].CustomerID FROM [Customers] WHERE ([Customers].[CustomerID] IS NULL) [0m
+  [4;35;1mCustomer Create (1.4ms)[0m   [0mINSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INACO', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m
+  [4;36;1mSQL (31.7ms)[0m   [0;1mSELECT TOP 1 * FROM [Customers] WHERE ([Customers].[CompanyName] = 'Inacom') [0m
+  [4;35;1mSQL (5.4ms)[0m   [0mSELECT TOP 1 [Customers].CustomerID FROM [Customers] WHERE ([Customers].[CustomerID] IS NULL) [0m
+  [4;36;1mCustomer Create (0.0ms)[0m   [0;1mDBI::DatabaseError: 23000 (2627) [FreeTDS][SQL Server]Violation of PRIMARY KEY constraint 'PK_Customers'. Cannot insert duplicate key in object 'dbo.Customers'.: INSERT INTO [Customers] ([ContactName], [City], [ContactTitle], [Region], [Phone], [CustomerID], [Country], [PostalCode], [Fax], [CompanyName], [Address]) VALUES('Chris Johnson', 'Madison', 'Solutions Developer', NULL, '608.661.7731', 'INACO', 'USA', NULL, '608.661.7701', 'Inacom', '3001 W. Beltline HWY')[0m

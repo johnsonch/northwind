@@ -1,0 +1,21 @@
+<h1>Listing customers</h1>
+
+
+<%= will_paginate @customers %>
+<table>
+  <tr>
+  </tr>
+
+<% for customer in @customers %>
+  <tr>
+		<td><%=h customer.CompanyName %></td>
+    <td><%= link_to 'Show', customer %></td>
+    <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+    <td><%= link_to 'Destroy', customer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= will_paginate @customers %>
+<br />
+
+<%= link_to 'New customer', new_customer_path %>

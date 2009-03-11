@@ -1,0 +1,19 @@
+<h1>New customer</h1>
+
+<% form_for(@customer) do |f| %>
+  <%= f.error_messages %>
+	<p>Company Name: <%= f.text_field :CompanyName %></p>	
+	<p>Contact Name: <%= f.text_field :ContactName %></p>
+	<p>Contact Title: <%= f.text_field :ContactTitle %></p>
+	<p>Address: <%= f.text_field :Address %></p>	
+	<p>City: <%= f.text_field :City %></p>	
+	<p>Region: <%= f.text_field :Region %></p>
+	<p>Postal Code: <%= f.text_field :PostalCode %></p>	
+	<p>Phone: <%= f.text_field :Phone %></p>		
+	<p>Fax: <%= f.text_field :Fax %></p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', customers_path %>
