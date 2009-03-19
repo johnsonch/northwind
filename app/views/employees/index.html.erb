@@ -6,6 +6,7 @@
 
 <% for employee in @employees %>
   <tr>
+		<td><%= employee.FirstName %> <%= employee.LastName %></td>
     <td><%= link_to 'Show', employee %></td>
     <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
     <td><%= link_to 'Destroy', employee, :confirm => 'Are you sure?', :method => :delete %></td>

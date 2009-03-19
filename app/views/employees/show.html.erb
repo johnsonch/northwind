@@ -1,4 +1,59 @@
-<%= @employee.TitleOfCourtesy %> <%= @employee.FirstName %> <%= @employee.LastName%><br/>
-<%= @employee.Title %>
-<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<h2><%= @employee.TitleOfCourtesy %> <%= @employee.FirstName %> <%= @employee.LastName%></h2>
+<b><%= @employee.Title %></b>
+<p>
+	<table>
+		<tr>
+			<td width="100px;">Reports To:</td>
+			<td><%= @employee.manager.FirstName %> <%= @employee.manager.LastName %></td>
+		</tr>
+		<tr>
+			<td>Birthday:</td>
+			<td><%= @employee.BirthDate.strftime('%m/%d/%Y')%></td>
+		</tr>
+		<tr>
+			<td>Hire Date:</td>
+			<td><%= @employee.HireDate.strftime('%m/%d/%Y')%></td>
+		</tr>
+		<tr>
+			<td>Address:</td>
+			<td><%= @employee.Address %> <%= @employee.City %>, <%= @employee.Region %> <%= @employee.PostalCode %></td>
+		</tr>
+		<tr>
+			<td>Home Phone:</td>
+			<td><%= @employee.HomePhone %></td>
+		</tr>
+		<tr>
+			<td>Extension:</td>
+			<td>X-<%= @employee.Extension %></td>
+		</tr>
+		<tr>
+			<td>Notes:</td>
+			<td><%= @employee.Notes %></td>
+		</tr>
+	</table>
+</p>
+
+<p>
+	<%= link_to 'Edit', edit_employee_path(@employee) %>
+</p>	
+<hr />
+<p>
+<b>Orders Sold</b>
+<table width="100%">
+	<tr>
+		<th>Order Date</th><th>Customer</th><th>Order Total (After Discounts)</th>
+	</tr>	
+	<% for order in @employee.orders.find(:all, :order => "OrderDate DESC") %>
+		<tr BGCOLOR="<%= cycle('#CECECE', '#FFFFFF') %>" >
+			<td><%= order.OrderDate.strftime('%m/%d/%Y') %></td>
+			<td>
+				<%= link_to order.customer.CompanyName, customer_path(order.customer) %>
+			</td>
+			<td align="right"><%= number_to_currency(order.total) %></td>
+		</tr>
+	<% end %>
+</table>
+</p>
+<p>
 <%= link_to 'Back', employees_path %>
+</p>

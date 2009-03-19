@@ -3,6 +3,54 @@
 <% form_for(@employee) do |f| %>
   <%= f.error_messages %>
 
+	<table>
+		<tr>
+			<td width="100px;">Name:</td>
+			<td><%= f.text_field :FirstName %> <%= f.text_field :LastName %></td>
+		</tr>
+		<tr>
+			<td>Birthday:</td>
+			<td><%= f.text_field :BirthDate %></td>
+		</tr>
+		<tr>
+			<td>Hire Date:</td>
+			<td><%= f.text_field :HireDate %></td>
+		</tr>
+		<tr>
+			<td>Address:</td>
+			<td><%= f.text_field :Address %> </td>
+		</tr>
+		<tr>
+			<td>City:</td>
+			<td><%= f.text_field :City %></td>
+		</tr>
+		<tr>
+			<td>Region:</td>
+			<td><%= f.text_field :Region %></td>
+		</tr>
+		<tr>
+			<td>Postal Code:</td>
+			<td><%= f.text_field :PostalCode %></td>
+		</tr>
+		<tr>
+			<td>Country :</td>
+			<td><%= f.text_field :Country %></td>
+		</tr>
+		<tr>
+			<td>Home Phone:</td>
+			<td><%= f.text_field :HomePhone %> (XXX) XXX-XXXX</td>
+		</tr>
+		<tr>
+			<td>Extension:</td>
+			<td><%= f.text_field :Extension %></td>
+		</tr>
+		<tr>
+			<td>Notes:</td>
+			<td><%= f.text_area :Notes %></td>
+		</tr>
+	</table>
+
+
   <p>
     <%= f.submit "Update" %>
   </p>
